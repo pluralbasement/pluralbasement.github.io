@@ -1,0 +1,109 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/cielo.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/limbo.jpg');
+  min-height:50%;
+}
+
+.pimg3{
+  background-image:url('../img/infierno.jpg');
+  min-height:50%;
+}
+
+.section{
+  text-align:center;
+  padding:30px 80px 30px 80px;
+  height: 500px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+/* This is the code for the 3 x 1 row of content  */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 10px;
+  background-color: transparent;
+  height: 300px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+/* This piece of code specifies the qualities of the columns of the grid */
+.column {
+  font-family: 'Output Sans', -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  padding-bottom: 10px;
+  margin: 20px;
+  background-color: transparent;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:50px;
+  letter-spacing:8px;
+  letter-spacing: 15px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:25px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
