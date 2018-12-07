@@ -1,107 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Plural Basement</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body, html {
+      position: relative;
+      height: 100%;
+  }
+
+
+  /* CIELO1 area stylesheet */
+  #cielo1 {padding: 25px 25px 25px 25px; background-image: url(img/cielo.jpg); min-height:100%; max-height: 100%;
+           max-width: inherit; background-position:center; background-size:cover; background-repeat:no-repeat;
+           background-attachment:fixed; opacity:0.70;}
+  /* TITLE CIELO area stylesheet */
+  #titleCielo { position:absolute; top:50%; width: auto; height:auto;
+               text-align:center; background-color: #111; color:#fff; font-size:50px; letter-spacing:8px; letter-spacing: 15px;
+               text-transform:uppercase; padding: 5px 5px 5px 5px; border: 10px 10px 10px 10px}
+  #topPicks {padding: 20px 50px 20px 50px; height:auto; color: #666; background-color:#f4f4f4;}
+  #playLIST {padding: 20px 50px 20px 50px; height:auto; color: #ffffff;}
+  #lightTop { height:auto;color: #666; background-color:#f4f4f4;}
+  #box {height: auto; padding:10px 10px 10px 10px; margin: 10px 10px 10px 10px;}
+  #limbo {padding: 25px 25px 25px 25px; background-image: url(img/limbo.jpg); min-height:40%; max-height: 40%;
+          max-width: inherit; background-position:center; background-size:cover; background-repeat:no-repeat;
+          background-attachment:fixed;  position:relative; opacity:0.70;}
+  #collectionsTitle {top: 50%; width: auto; text-align:center; color: white; min-height: 50%;
+                     font-size:40px; letter-spacing:8px; letter-spacing: 15px; text-transform:uppercase; padding:25px 25px 25px 25px ;
+                     position: relative; background-color: transparent;}
+  #darkTop {height:auto;color: #ddd; background-color: #282e34;}
+  #infierno {padding: 25px 25px 25px 25px; background-image: url(img/infierno.jpg); min-height:40%; max-height: 40%;
+           max-width: inherit; background-position:center; background-size:cover; background-repeat:no-repeat;
+           background-attachment:fixed; opacity:0.70;}
+  #darkBottom {padding-top:50px;height:500px;color: #ddd; background-color: #282e34;}
+  #cardBG {background-color: #282e34; color: #ddd; border-color: transparent; padding: 20px 20px 20px 20px;}
+
+
+
+  </style>
 </head>
-<body>
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border">
-        Plural Basement
-      </span>
+
+<!-- BODY  [START]-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav id="topNavBar" class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Plural Basement</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#topPicks">Top Picks</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#collectionsTitle">Collections</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#infierno">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="cielo1" class="container-fluid">
+    <div class="d-flex justify-content-center container">
+      <div id="titleCielo" class="card">
+        <div class="card-body">Plural Basement</div>
+      </div>
+    </div>
+  </div>
+<!-- TOP PICKS code [start] -->
+  <div id="topPicks" class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <h2 id="tpTitle" >Top Picks</h2>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="lightTop" class="row align-items-center justify-content-around">
+      <div id="box" class="d-inline-flex p-2 bd-highlight">
+        <iframe src="https://open.spotify.com/embed/track/2eBs4FDjr5zpr93l8OAYCq" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <div id="box" class="d-inline-flex p-2 bd-highlight">
+        <iframe src="https://open.spotify.com/embed/track/2A0zKcpBgK7v9G2gsimPIY" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <div id="box" class="d-inline-flex p-2 bd-highlight">
+        <iframe src="https://open.spotify.com/embed/track/1ggOcIqhVvjZOJ3SnzAfCt" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <div id="box" class="d-inline-flex p-2 bd-highlight">
+        <iframe src="https://open.spotify.com/embed/track/4xSHnlryc9WjSFlVfNNO14" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
     </div>
   </div>
 
-  <section class="section section-light">
-    <h2>Recent Picks</h2>
-    <div class="grid">
-      <div class="columnLight">
-        <iframe src="https://open.spotify.com/embed/track/4xSHnlryc9WjSFlVfNNO14"
-        width="350" height="400" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-      </div>
-      <div class="columnLight">
-        <iframe src="https://open.spotify.com/embed/track/0h9xxCoXw2LkdJG9pR79RN"
-        width="350" height="400" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-      </div>
-      <div class="columnLight">
-        <iframe src="https://open.spotify.com/embed/track/5OTflYC7fuDazjkA5QFakF"
-        width="350" height="400" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        Collections
-      </span>
+<!-- COLLECTIONS code [start] -->
+  <div id="limbo" class="container-fluid">
+    <div class="d-flex justify-content-center container">
+        <div class="d-flex align-content-center flex-wrap">
+          <div id="collectionsTitle" class="card ">
+            <div class="card-body">Collections</div>
+          </div>
+        </div>
     </div>
   </div>
 
-  <section class="section section-dark">
-    <h2>Top Playlists</h2>
-    <div class="grid">
-      <div class="column">
-        <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/5VPK2UCN3RbKJR1PA5Af4K"
-        width="350" height="380" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-      </div>
-      <div class="column">
-        <iframe src="https://open.spotify.com/embed/user/sfjazz_playlists/playlist/0zBMi3cpL4OVboRohBnJUL"
-        width="350" height="380" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-      </div>
-      <div class="column">
-        <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/17dqne0pQ9rVA1f87GGocL"
-        width="350" height="380" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
+  <div id="darkTop" class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <h2 id="playLIST"> Playlists</h2>
+    </div>
+    <div  class="container-fluid">
+      <div id="darkTop" class="row align-items-center justify-content-around">
+        <div id="box" class="d-inline-flex p-2 bd-highlight">
+          <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/5VPK2UCN3RbKJR1PA5Af4K" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div id="box" class="d-inline-flex p-2 bd-highlight">
+          <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/17dqne0pQ9rVA1f87GGocL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div id="box" class="d-inline-flex p-2 bd-highlight">
+          <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/2d2MZPyAE6skfIwGy9GxPQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div id="box" class="d-inline-flex p-2 bd-highlight">
+          <iframe src="https://open.spotify.com/embed/user/21op7qs35bewd5rr7yoksa6bq/playlist/2xHkOrHVVMZEIFpYGU4c3T" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+<!-- COLLECTIONS code [end] -->
 
-  <div class="pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        About/Contact
-      </span>
+<!-- CONTACT / ABOUT US code [start] -->
+  <div id="infierno" class="container-fluid">
+    <div class="d-flex justify-content-center container">
+      <div class="d-flex align-content-center flex-wrap">
+        <div id="collectionsTitle" class="card">
+          <div class="card-body">About Us / Contact </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <section class="section section-dark">
-    <div class="grid">
-      <div class="column">
-          <h1>Creator: Mauricio McCoy</h1>
-          <p>Computer science student based in Austin, Texas.</p>
-      </div>
-      <div class="column">
-          <h1>CONTACT:</h1>
-          <ul>
-            <li>Phone: (956)821-8135</li>
-            <li>Email: mccoymauricio96@gmail.com</li>
-            <li>Instagram: maumccoy</li>
+  <div  class="container-fluid">
+    <div id="darkTop" class="row justify-content-around">
+      <div id="cardBG"class="card" style="width: 20rem;">
+        <div id="cardBG" class="card-header">
+          <h1>Author</h1>
+        </div>
+          <ul class="list-group list-group-flush">
+            <li id="cardBG" class="list-group-item">Mauricio McCoy</li>
+            <li id="cardBG" class="list-group-item">Computer science student based in Austin Texas</li>
           </ul>
       </div>
-      <div class="column">
-        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:21op7qs35bewd5rr7yoksa6bq&size=detail&theme=dark"
-        width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-        allowtransparency="true"></iframe>
-      </div>
-    </div>
-  </section>
 
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border">
-        Plural Basement
-      </span>
+      <div id="cardBG"class="card" style="width: 20rem;">
+        <div id="cardBG" class="card-header">
+          <h1>Contact</h1>
+        </div>
+          <ul class="list-group list-group-flush">
+            <li id="cardBG" class="list-group-item ">Email: mccoymauricio96@gmail.com</li>
+            <li id="cardBG" class="list-group-item">Insta: maumccoy</li>
+          </ul>
+      </div>
+<!-- ADD SPOTIFY FOLLOW BUTTON -->
+      <div id="cardBG" class="card" style="width: 20rem">
+        <div  id="cardBG" class="card">
+          <div class="d-flex justify-content-center">
+            <div>
+              <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:21op7qs35bewd5rr7yoksa6bq&size=detail&theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            </div>
+        </div>
+      </div>
+
     </div>
   </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
